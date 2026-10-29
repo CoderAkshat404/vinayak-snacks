@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#5A0F1C">
+<title>विनायक स्नैक्स एण्ड स्वीट्स — Vinayak Snacks & Sweets, Raipur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF3E4; --surface:#FFFFFF; --ink:#2A1210; --muted:#7B5A4E; --line:#EADAC0;
+  --accent:#7A1527; --maroon:#5A0F1C; --maroon-2:#3E0812; --gold:#E4B24C; --gold-2:#F6D88A; --gold-ink:#3A2306;
+  --saffron:#E9781B; --leaf:#2E6B40; --leaf-ink:#fff; --wa:#1DA851;
+  --t-namkeen:#FCE7C8; --t-sweet:#F9DCD9; --t-baked:#EEDFCF;
+  --shadow:0 1px 2px rgba(60,20,10,.06),0 8px 24px rgba(90,30,10,.10);
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#160D0A; --surface:#22140F; --ink:#F6E8D8; --muted:#C6A999; --line:#3A261C;
+  --accent:#F1909C; --leaf:#62BE83; --leaf-ink:#0D1A11;
+  --t-namkeen:#3A2614; --t-sweet:#3B1D21; --t-baked:#30241B;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35); color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#160D0A; --surface:#22140F; --ink:#F6E8D8; --muted:#C6A999; --line:#3A261C;
+  --accent:#F1909C; --leaf:#62BE83; --leaf-ink:#0D1A11;
+  --t-namkeen:#3A2614; --t-sweet:#3B1D21; --t-baked:#30241B;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35); color-scheme:dark;}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 130px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Mukta","Noto Sans Devanagari","Nirmala UI",system-ui,sans-serif;font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--maroon)}
+h1,h2,h3,p{margin:0}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+a{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:2px;border-radius:10px}
+.serif{font-family:"Rozha One","Mukta",Georgia,serif;font-weight:400}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--maroon);color:var(--gold-2);border-bottom:1px solid rgba(228,178,76,.25)}
+.top .wrap{display:flex;align-items:center;gap:10px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--gold-2);text-decoration:none;min-width:0}
+.brand .mark{width:36px;height:36px;border-radius:50%;background:var(--gold);display:grid;place-items:center;flex:none}
+.brand b{font-family:"Rozha One",serif;font-weight:400;font-size:20px;line-height:1;white-space:nowrap}
+.brand small{display:block;font-size:12px;letter-spacing:.04em;color:rgba(246,216,138,.75);margin-top:3px}
+.top .sp{flex:1}
+.lang{background:transparent;border:1.5px solid rgba(228,178,76,.5);color:var(--gold-2);border-radius:999px;height:38px;padding:0 14px;font-weight:700}
+.cartbtn{display:flex;align-items:center;gap:8px;background:var(--gold);color:var(--gold-ink);border:0;border-radius:999px;height:38px;padding:0 8px 0 14px;font-weight:800}
+.cartbtn .n{background:var(--maroon);color:var(--gold-2);border-radius:999px;min-width:24px;height:24px;display:grid;place-items:center;font-size:13px;padding:0 6px}
+.cartbtn.bump{animation:bump .35s ease}
+@keyframes bump{40%{transform:scale(1.12)}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--maroon);color:#FBEBD0;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.55;
+  background:
+   radial-gradient(circle at 50% 50%,rgba(228,178,76,.22) 1.5px,transparent 2.5px) 0 0/26px 26px,
+   radial-gradient(ellipse at 75% 40%,rgba(233,120,27,.35),transparent 55%),
+   radial-gradient(ellipse at 10% 100%,var(--maroon-2),transparent 60%)}
+.toran{display:block;width:100%;height:58px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding-top:10px;padding-bottom:56px}
+.hero h1{font-family:"Rozha One",serif;font-weight:400;color:var(--gold-2);font-size:clamp(44px,7.4vw,84px);line-height:1.05;letter-spacing:-.01em}
+.hero .en{font-family:"Rozha One",serif;font-size:clamp(20px,2.6vw,28px);color:#F2C9A0;margin-top:10px}
+.hero p.lead{margin-top:16px;max-width:30em;font-size:18px;color:#F1D9C0}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;padding:0;list-style:none}
+.facts li{border:1px solid rgba(228,178,76,.45);color:var(--gold-2);border-radius:999px;padding:4px 14px;font-size:15px;font-weight:500}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:14px;height:52px;padding:0 22px;font-weight:800;font-size:17px;text-decoration:none;white-space:nowrap}
+.btn-gold{background:var(--gold);color:var(--gold-ink);box-shadow:0 6px 0 #A7781F}
+.btn-gold:active{transform:translateY(3px);box-shadow:0 3px 0 #A7781F}
+.btn-line{background:transparent;color:var(--gold-2);border:1.5px solid rgba(228,178,76,.6)}
+.btn-wa{background:var(--wa);color:#fff}
+
+/* thali */
+.thali-wrap{position:relative;display:grid;place-items:center;aspect-ratio:1;max-width:420px;width:100%;justify-self:center}
+.mandala{position:absolute;inset:-6%;opacity:.5}
+.thali{position:relative;width:86%;aspect-ratio:1;border-radius:50%;
+  background:
+   radial-gradient(circle at 35% 30%,rgba(255,255,255,.55),transparent 35%),
+   radial-gradient(circle,#F9DF95 0 58%,#C8952F 58.5% 60%,#F3CF72 61% 70%,#B98729 70.5% 72%,#EFC567 72.5% 92%,#9C6E1C 93% 100%);
+  box-shadow:0 30px 50px rgba(0,0,0,.45),inset 0 -8px 20px rgba(120,70,0,.35)}
+.katori{position:absolute;width:30%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 40% 35%,#FFF4CF,#E8BC59 55%,#B07E22 100%);
+  box-shadow:0 8px 14px rgba(90,50,0,.35),inset 0 0 0 4px rgba(255,240,200,.5);
+  opacity:0;animation:drop .7s cubic-bezier(.2,.9,.3,1.2) forwards}
+.katori svg{width:72%;height:72%}
+.katori.c{width:34%}
+@keyframes drop{from{opacity:0;transform:translate(var(--x),calc(var(--y) - 40px)) scale(.8)}to{opacity:1;transform:translate(var(--x),var(--y)) scale(1)}}
+.diya{position:absolute;bottom:4%;right:2%;width:22%}
+.flame{transform-origin:50% 100%;animation:flick 1.8s ease-in-out infinite}
+@keyframes flick{50%{transform:scaleY(.86) skewX(3deg)}}
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr;text-align:center;padding-bottom:40px}
+  .hero p.lead{margin-left:auto;margin-right:auto}
+  .facts,.ctas{justify-content:center}
+  .thali-wrap{max-width:300px;grid-row:1;margin-top:-6px}
+}
+.scallop{display:block;width:100%;height:22px;margin-top:-21px;position:relative}
+
+/* ---------- box ---------- */
+.giftbox{margin:34px 0 10px;display:grid;grid-template-columns:150px 1fr auto;gap:22px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:18px 22px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.giftbox h2{font-family:"Rozha One",serif;font-weight:400;font-size:28px;color:var(--accent);line-height:1.15}
+.giftbox p{color:var(--muted);margin-top:4px}
+.giftbox .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.giftbox .chips span{background:var(--t-namkeen);border-radius:8px;padding:2px 10px;font-size:14px;font-weight:600}
+.giftbox .act{text-align:right}
+.giftbox .act .p{font-family:"Rozha One",serif;font-size:30px;line-height:1}
+.giftbox .act small{display:block;color:var(--muted);margin-bottom:10px}
+.btn-maroon{background:var(--maroon);color:var(--gold-2)}
+@media (max-width:760px){.giftbox{grid-template-columns:1fr;text-align:center}.giftbox::after{display:none}.giftbox svg{margin:0 auto}.giftbox .chips{justify-content:center}.giftbox .act{text-align:center}}
+
+/* ---------- menu ---------- */
+.menu{padding-top:30px}
+.menu h2{font-family:"Rozha One",serif;font-weight:400;font-size:clamp(34px,5vw,46px);color:var(--accent);line-height:1.1}
+.menu .sub{color:var(--muted);margin-top:2px}
+.nav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 60px);z-index:20;background:var(--bg);padding:12px 0 10px;margin-top:10px;border-bottom:1px solid var(--line)}
+.nav .row{display:flex;gap:8px;align-items:center}
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;flex:1}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;height:40px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);padding:0 16px;font-weight:700;color:var(--muted)}
+.tab[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.searchbox{position:relative;flex:0 1 260px}
+.searchbox input{width:100%;height:40px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);padding:0 14px 0 38px}
+.searchbox svg{position:absolute;left:13px;top:11px}
+@media (max-width:640px){.nav .row{flex-direction:column;align-items:stretch}.searchbox{flex:auto}.tabs{order:2}}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+@media (max-width:860px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+.card{background:var(--surface);border-radius:22px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1px solid var(--line)}
+.tile{position:relative;aspect-ratio:4/3;display:grid;place-items:center;background:var(--t-namkeen)}
+.card.sweet .tile{background:var(--t-sweet)} .card.baked .tile{background:var(--t-baked)}
+.tile::before{content:"";position:absolute;width:62%;aspect-ratio:1;border-radius:50%;background:var(--surface);opacity:.55;box-shadow:0 0 0 10px rgba(255,255,255,.25)}
+.tile svg{position:relative;width:48%;height:auto;filter:drop-shadow(0 6px 6px rgba(90,40,0,.18))}
+.tile .kind{position:absolute;left:10px;top:10px;background:var(--surface);color:var(--muted);border-radius:999px;padding:1px 10px;font-size:13px;font-weight:700}
+.tile .have{position:absolute;right:10px;top:10px;background:var(--leaf);color:var(--leaf-ink);border-radius:999px;padding:1px 10px;font-size:13px;font-weight:800}
+.card .body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:19px;font-weight:800;line-height:1.25}
+.card .alt{color:var(--muted);font-size:15px;font-weight:500;line-height:1.3;margin-top:2px}
+.card .foot{display:flex;align-items:flex-end;justify-content:space-between;gap:8px;margin-top:auto;padding-top:12px}
+.card .pr b{font-family:"Rozha One",serif;font-weight:400;font-size:24px;line-height:1}
+.card .pr small{color:var(--muted);font-weight:600}
+.card .pr span{display:block;font-size:13px;color:var(--muted);font-weight:600}
+.add{height:42px;min-width:42px;border-radius:12px;border:0;background:var(--saffron);color:#fff;font-weight:800;font-size:16px;padding:0 14px;display:flex;align-items:center;gap:4px;box-shadow:0 4px 0 #B85A0F;transition:transform .1s}
+.add:active{transform:translateY(2px);box-shadow:0 2px 0 #B85A0F}
+.add .plus{font-size:22px;line-height:1;margin-top:-2px}
+@media (max-width:420px){.card h3{font-size:17px}.card .alt{font-size:14px}.card .pr b{font-size:21px}.add .lbl{display:none}.card .body{padding:10px 11px 12px}}
+.none{text-align:center;color:var(--muted);padding:40px 0}
+
+/* ---------- contact ---------- */
+.contact{margin:56px 0 0;background:var(--maroon);color:#F6E3C8;border-radius:28px;padding:30px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;opacity:.4;background:radial-gradient(circle,rgba(228,178,76,.22) 1.5px,transparent 2.5px) 0 0/26px 26px}
+.contact>*{position:relative}
+.contact h2{font-family:"Rozha One",serif;font-weight:400;font-size:34px;color:var(--gold-2)}
+.contact .who{font-size:22px;font-weight:800;margin-top:6px}
+.contact address{font-style:normal;color:#E7C8AE;margin-top:2px}
+.contact .acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end;max-width:440px}
+@media (max-width:760px){.contact{grid-template-columns:1fr;text-align:center}.contact .acts{justify-content:center;max-width:none}}
+footer{text-align:center;color:var(--muted);padding:26px 0 130px;font-size:15px}
+
+/* ---------- floating bar ---------- */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:25;visibility:hidden;padding:10px 14px calc(12px + env(safe-area-inset-bottom,0px));pointer-events:none;transform:translateY(130%);transition:transform .3s cubic-bezier(.2,.9,.3,1)}
+.bar.show{transform:none;visibility:visible}
+.bar button{pointer-events:auto;width:100%;max-width:560px;margin:0 auto;display:flex;align-items:center;gap:12px;background:var(--leaf);color:var(--leaf-ink);border:0;border-radius:18px;height:62px;padding:0 10px 0 18px;box-shadow:0 12px 30px rgba(0,0,0,.28);text-align:left}
+.bar .l{flex:1;line-height:1.2}
+.bar .l small{display:block;font-weight:600;opacity:.85;font-size:14px}
+.bar .l b{font-size:20px}
+.bar .go{background:rgba(255,255,255,.18);border-radius:12px;height:44px;display:flex;align-items:center;padding:0 16px;font-weight:800}
+
+/* ---------- sheets ---------- */
+.scrim{position:fixed;inset:0;background:rgba(25,8,4,.55);z-index:45;opacity:0;pointer-events:none;transition:opacity .25s;backdrop-filter:blur(2px)}
+.scrim.open{opacity:1;pointer-events:auto}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:50;margin:0 auto;max-width:560px;max-height:94vh;overflow-y:auto;overscroll-behavior:contain;background:var(--bg);border-radius:26px 26px 0 0;transform:translateY(105%);transition:transform .3s cubic-bezier(.2,.9,.3,1);padding-bottom:calc(20px + env(safe-area-inset-bottom,0px))}
+.sheet.open{transform:none}
+@media (min-width:700px){.sheet{bottom:50%;border-radius:26px;transform:translateY(60%) scale(.96);opacity:0;transition:transform .25s,opacity .2s}.sheet.open{transform:translateY(50%);opacity:1}}
+.sheet .in{padding:0 20px}
+.grab{width:44px;height:5px;border-radius:5px;background:var(--line);margin:10px auto 0}
+.x{position:absolute;right:14px;top:14px;width:38px;height:38px;border-radius:50%;border:0;background:var(--surface);box-shadow:var(--shadow);font-size:18px;z-index:2}
+.phero{display:grid;place-items:center;height:150px;margin:10px 16px 0;border-radius:20px;background:var(--t-namkeen)}
+.phero.sweet{background:var(--t-sweet)}.phero.baked{background:var(--t-baked)}
+.phero svg{width:96px;height:96px;filter:drop-shadow(0 8px 8px rgba(90,40,0,.2))}
+.ptitle{margin-top:14px}
+.ptitle h3{font-size:23px;font-weight:800;line-height:1.2}
+.ptitle p{color:var(--muted);font-weight:500}
+.lab{font-weight:800;margin:18px 0 8px}
+.lab small{color:var(--muted);font-weight:500}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{position:relative;border:2px solid var(--line);background:var(--surface);border-radius:16px;padding:14px 34px 14px 12px;text-align:left}
+.opt b{display:block;font-size:19px;line-height:1.2}
+.opt span{color:var(--muted);font-weight:600}
+.opt .big{font-family:"Rozha One",serif;font-size:24px;color:var(--ink);font-weight:400}
+.opt[aria-checked="true"]{border-color:var(--leaf);box-shadow:inset 0 0 0 1px var(--leaf)}
+.opt[aria-checked="true"]::after{content:"✓";position:absolute;right:10px;top:10px;width:22px;height:22px;border-radius:50%;background:var(--leaf);color:var(--leaf-ink);display:grid;place-items:center;font-size:13px;font-weight:800}
+.stepper{display:inline-flex;align-items:center;background:var(--surface);border:2px solid var(--line);border-radius:14px;overflow:hidden}
+.stepper button{width:48px;height:46px;border:0;background:transparent;font-size:22px;font-weight:800;color:var(--accent)}
+.stepper output{min-width:40px;text-align:center;font-weight:800;font-size:19px}
+.stepper.sm{border-radius:11px}.stepper.sm button{width:34px;height:34px;font-size:18px}.stepper.sm output{min-width:26px;font-size:16px}
+.cta{width:100%;height:58px;margin-top:20px;border:0;border-radius:16px;background:var(--leaf);color:var(--leaf-ink);font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+
+/* cart */
+.chead{padding:18px 20px 6px}
+.chead h3{font-family:"Rozha One",serif;font-weight:400;font-size:30px;color:var(--accent);line-height:1.1}
+.chead p{color:var(--muted)}
+.card2{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:4px 14px;margin-top:12px}
+.ln{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--line)}
+.ln:last-child{border-bottom:0}
+.ln .ic{width:44px;height:44px;border-radius:12px;background:var(--t-namkeen);display:grid;place-items:center}
+.ln .ic.sweet{background:var(--t-sweet)}.ln .ic.baked{background:var(--t-baked)}
+.ln .ic svg{width:30px;height:30px}
+.ln .nm{font-weight:800;line-height:1.2}
+.ln .nm small{display:block;color:var(--muted);font-weight:500;font-size:14px}
+.ln .meta{display:flex;align-items:center;gap:10px;margin-top:6px}
+.ln .meta .w{color:var(--muted);font-size:14px;font-weight:600}
+.ln .amt{text-align:right;font-weight:800}
+.ln .amt button{display:block;margin-left:auto;margin-top:6px;background:none;border:0;color:var(--muted);font-size:13px;text-decoration:underline;text-underline-offset:3px;padding:2px 0}
+.bill{padding:12px 0}
+.bill div{display:flex;justify-content:space-between;color:var(--muted);font-weight:600}
+.bill .tot{color:var(--ink);font-weight:800;font-size:18px;border-top:1.5px solid var(--line);margin-top:8px;padding-top:10px;align-items:baseline}
+.bill .tot b{font-family:"Rozha One",serif;font-weight:400;font-size:30px;color:var(--leaf)}
+.f{display:block;margin:12px 0}
+.f>span{display:block;font-weight:700;font-size:15px;margin-bottom:5px}
+.f>span small{color:var(--muted);font-weight:500}
+.f input,.f textarea{width:100%;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);padding:11px 14px;min-height:46px}
+.f textarea{min-height:70px;resize:vertical}
+.f .err{display:none;color:#C0283A;font-weight:600;font-size:14px;margin-top:4px}
+.f.bad input,.f.bad textarea{border-color:#C0283A}.f.bad .err{display:block}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.seg button{border:2px solid var(--line);background:var(--bg);border-radius:12px;padding:10px 8px;font-weight:700;line-height:1.2}
+.seg button small{display:block;color:var(--muted);font-weight:500;font-size:13px}
+.seg button[aria-checked="true"]{border-color:var(--leaf);box-shadow:inset 0 0 0 1px var(--leaf)}
+.send{width:100%;height:60px;margin-top:16px;border:0;border-radius:16px;background:var(--wa);color:#fff;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 5px 0 #13813F}
+.send:active{transform:translateY(3px);box-shadow:0 2px 0 #13813F}
+.hint{text-align:center;color:var(--muted);font-size:14px;margin-top:10px}
+.sent{display:none;margin-top:14px;background:var(--surface);border:1.5px solid var(--leaf);border-radius:14px;padding:12px;text-align:center}
+.sent.show{display:block}
+.linkbtn{background:none;border:0;color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px;padding:6px}
+.emptyc{text-align:center;padding:30px 10px 10px;color:var(--muted)}
+.emptyc svg{width:90px;height:90px;opacity:.8}
+
+.toast{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-weight:700;z-index:60;opacity:0;pointer-events:none;transition:all .2s;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Vinayak Snacks & Sweets">
+      <span class="mark"><svg width="22" height="22" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3c4 6 6 9 6 13a6 6 0 0 1-12 0c0-4 2-7 6-13z" fill="#7A1527"/><path d="M3 23h34c-2 8-9 12-17 12S5 31 3 23z" fill="#7A1527"/></svg></span>
+      <span><b>विनायक</b><small>Snacks &amp; Sweets</small></span>
+    </a>
+    <div class="sp"></div>
+    <button class="lang" id="langBtn">EN</button>
+    <button class="cartbtn" id="cartBtn" aria-label="Open cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.5 11a2 2 0 0 1-2 1.7h-7a2 2 0 0 1-2-1.7z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" id="badge">0</span></button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <svg class="toran" aria-hidden="true" preserveAspectRatio="none">
+    <defs><pattern id="tor" width="70" height="58" patternUnits="userSpaceOnUse">
+      <path d="M0 5 Q35 18 70 5" fill="none" stroke="#E4B24C" stroke-width="1.6"/>
+      <path d="M35 15 C44 25 43 40 35 54 C27 40 26 25 35 15Z" fill="#3E8A55"/><path d="M35 17V52" stroke="#24603A" stroke-width="1.2"/>
+      <g><circle cx="12" cy="10" r="8" fill="#E9781B"/><circle cx="12" cy="10" r="5" fill="#F5B21B"/><circle cx="12" cy="10" r="2" fill="#B5500C"/></g>
+      <g><circle cx="58" cy="10" r="8" fill="#F5B21B"/><circle cx="58" cy="10" r="5" fill="#E9781B"/><circle cx="58" cy="10" r="2" fill="#B5500C"/></g>
+    </pattern></defs>
+    <rect width="100%" height="58" fill="url(#tor)"/>
+  </svg>
+  <div class="wrap">
+    <div>
+      <h1>विनायक स्नैक्स<br>एण्ड स्वीट्स</h1>
+      <div class="en">Vinayak Snacks &amp; Sweets</div>
+      <p class="lead" data-t="lead"></p>
+      <ul class="facts">
+        <li data-t="f1"></li><li data-t="f2"></li><li data-t="f3"></li>
+      </ul>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#menu" data-t="order"></a>
+        <a class="btn btn-line" href="https://wa.me/919098080961" target="_blank" rel="noopener" data-t="chat"></a>
+      </div>
+    </div>
+    <div class="thali-wrap" aria-hidden="true">
+      <svg class="mandala" viewBox="0 0 200 200"><g fill="none" stroke="#E4B24C" stroke-opacity=".45">
+        <circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="88" stroke-dasharray="2 5"/>
+        <g id="pt"><path d="M100 4 C108 20 108 30 100 40 C92 30 92 20 100 4Z"/></g>
+      </g></svg>
+      <div class="thali" id="thali"></div>
+      <svg class="diya" viewBox="0 0 80 70"><path class="flame" d="M40 4c6 9 9 14 9 19a9 9 0 0 1-18 0c0-5 3-10 9-19z" fill="#FFB52E"/><path class="flame" d="M40 14c3 4 4 7 4 9a4 4 0 0 1-8 0c0-2 1-5 4-9z" fill="#FFF0B0"/><path d="M4 38h72c-4 16-18 26-36 26S8 54 4 38z" fill="#B5531E"/><path d="M4 38h72" stroke="#E4B24C" stroke-width="3" stroke-linecap="round"/><path d="M18 48h44" stroke="#E4B24C" stroke-width="2" stroke-dasharray="3 4"/></svg>
+    </div>
+  </div>
+</section>
+
+
+<main class="wrap">
+  <section class="giftbox" aria-labelledby="boxT">
+    <svg width="130" height="120" viewBox="0 0 130 120" aria-hidden="true">
+      <rect x="14" y="44" width="102" height="68" rx="8" fill="#7A1527"/>
+      <rect x="8" y="32" width="114" height="20" rx="6" fill="#962036"/>
+      <rect x="58" y="32" width="14" height="80" fill="#E4B24C"/>
+      <path d="M65 32C50 8 30 12 38 28Z M65 32C80 8 100 12 92 28Z" fill="#E4B24C"/>
+      <circle cx="65" cy="31" r="6" fill="#F6D88A"/>
+      <g fill="#E4B24C" opacity=".6"><circle cx="30" cy="80" r="2"/><circle cx="40" cy="92" r="2"/><circle cx="96" cy="74" r="2"/><circle cx="88" cy="96" r="2"/></g>
+    </svg>
+    <div>
+      <h2 id="boxT" data-t="boxTitle"></h2>
+      <p data-t="boxDesc"></p>
+      <div class="chips" id="boxChips"></div>
+    </div>
+    <div class="act">
+      <div class="p" id="boxPrice"></div>
+      <small data-t="boxKg"></small>
+      <button class="btn btn-maroon" id="boxBtn" data-t="boxBtn"></button>
+    </div>
+  </section>
+
+  <section class="menu" id="menu" aria-labelledby="menuT">
+    <h2 id="menuT" data-t="menu"></h2>
+    <p class="sub" data-t="menuSub"></p>
+    <div class="nav">
+      <div class="row">
+        <div class="tabs" role="group" aria-label="Category" id="tabs"></div>
+        <label class="searchbox"><span class="sr" data-t="search"></span>
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" style="color:var(--muted)"><circle cx="8.5" cy="8.5" r="6"/><path d="M13 13l5 5"/></svg>
+          <input id="q" type="search" autocomplete="off">
+        </label>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="none" id="none" hidden data-t="none"></p>
+  </section>
+
+  <section class="contact" aria-labelledby="cT">
+    <div>
+      <h2 id="cT" data-t="contact"></h2>
+      <div class="who" data-t="who"></div>
+      <address data-t="addr"></address>
+    </div>
+    <div class="acts">
+      <a class="btn btn-wa" href="https://wa.me/919098080961" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-gold" href="tel:+919098080961">📞 90980 80961</a>
+      <a class="btn btn-line" href="tel:+917828922995">📞 78289 22995</a>
+      <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Janta+Colony+Gudhiyari+Raipur+Chhattisgarh" target="_blank" rel="noopener" data-t="map"></a>
+      <button class="btn btn-line" id="shareBtn" data-t="share"></button>
+    </div>
+  </section>
+  <footer data-t="footer"></footer>
+</main>
+
+<div class="bar" id="bar"><button id="barBtn"><span class="l"><small id="barCount"></small><b id="barTotal"></b></span><span class="go">View cart (कार्ट देखें)</span></button></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="pick" role="dialog" aria-modal="true" aria-labelledby="pName" hidden>
+  <button class="x" data-close aria-label="Close">✕</button>
+  <div class="grab"></div>
+  <div class="phero" id="pHero"></div>
+  <div class="in">
+    <div class="ptitle"><h3 id="pName"></h3><p id="pAlt"></p></div>
+    <div id="vWrap" hidden><div class="lab">Made with <small>(किससे बने)</small></div><div class="opts" role="radiogroup" id="vOpts"></div></div>
+    <div class="lab">How much? <small>(कितना चाहिए?)</small></div>
+    <div class="opts" role="radiogroup" id="wOpts"></div>
+    <div class="lab">Packs <small>(कितने पैकेट)</small></div>
+    <div class="stepper"><button id="qm" aria-label="Fewer">−</button><output id="qo">1</output><button id="qp" aria-label="More">+</button></div>
+    <button class="cta" id="addBtn"><span>Add to cart <small style="font-weight:500;opacity:.85">(कार्ट में डालें)</small></span><span id="addAmt"></span></button>
+  </div>
+</div>
+
+<div class="sheet" id="cart" role="dialog" aria-modal="true" aria-labelledby="cT2" hidden>
+  <button class="x" data-close aria-label="Close">✕</button>
+  <div class="grab"></div>
+  <div class="chead"><h3 id="cT2">Your order <span style="font-size:.6em;color:var(--muted)">(आपका ऑर्डर)</span></h3></div>
+  <div class="in" id="cartBody"></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+const PHONE='919098080961';
+const ICONS={
+ chakli:'<svg viewBox="0 0 48 48"><path d="M24 24a2 2 0 0 1 4 0a5 5 0 0 1-10 0a8 8 0 0 1 16 0a11 11 0 0 1-22 0a14 14 0 0 1 28 0" fill="none" stroke="#C98A2E" stroke-width="4.5" stroke-linecap="round"/><path d="M24 24a2 2 0 0 1 4 0a5 5 0 0 1-10 0a8 8 0 0 1 16 0a11 11 0 0 1-22 0a14 14 0 0 1 28 0" fill="none" stroke="#E7B65C" stroke-width="1.6" stroke-dasharray="2 3" stroke-linecap="round"/></svg>',
+ gujiya:'<svg viewBox="0 0 48 48"><path d="M5 32A19 19 0 0 1 43 32Z" fill="#EFC77E"/><path d="M5 32A19 19 0 0 1 43 32" fill="none" stroke="#B9832F" stroke-width="5" stroke-dasharray="2.5 2.5"/><path d="M12 30q12-9 24 0" fill="none" stroke="#D9A54F" stroke-width="2"/></svg>',
+ gujiyaK:'<svg viewBox="0 0 48 48"><path d="M5 32A19 19 0 0 1 43 32Z" fill="#F3D59A"/><path d="M5 32A19 19 0 0 1 43 32" fill="none" stroke="#B9832F" stroke-width="5" stroke-dasharray="2.5 2.5"/><circle cx="18" cy="26" r="2" fill="#fff"/><circle cx="25" cy="23" r="2" fill="#fff"/><circle cx="31" cy="27" r="2" fill="#fff"/><circle cx="22" cy="29" r="1.6" fill="#7DA35A"/></svg>',
+ namakpare:'<svg viewBox="0 0 48 48"><g stroke="#A86F22" stroke-width="1.4"><path d="M10 18l7-7 7 7-7 7z" fill="#DDA84A"/><path d="M24 22l7-7 7 7-7 7z" fill="#E5B85E"/><path d="M14 32l7-7 7 7-7 7z" fill="#E5B85E"/><path d="M28 36l6-6 6 6-6 6z" fill="#DDA84A"/></g><g fill="#3B2410"><circle cx="17" cy="18" r=".9"/><circle cx="31" cy="22" r=".9"/><circle cx="21" cy="32" r=".9"/></g></svg>',
+ shakkarpare:'<svg viewBox="0 0 48 48"><g stroke="#A86F22" stroke-width="1.3"><rect x="8" y="12" width="12" height="12" rx="2" fill="#E8B65A" transform="rotate(-8 14 18)"/><rect x="26" y="10" width="12" height="12" rx="2" fill="#EDC375" transform="rotate(10 32 16)"/><rect x="12" y="28" width="12" height="12" rx="2" fill="#EDC375" transform="rotate(6 18 34)"/><rect x="28" y="27" width="12" height="12" rx="2" fill="#E8B65A" transform="rotate(-12 34 33)"/></g><g fill="#fff"><circle cx="13" cy="16" r="1"/><circle cx="33" cy="15" r="1"/><circle cx="18" cy="33" r="1"/><circle cx="35" cy="32" r="1"/><circle cx="16" cy="20" r=".8"/><circle cx="31" cy="19" r=".8"/></g></svg>',
+ chivda:'<svg viewBox="0 0 48 48"><g fill="#F2CF55"><ellipse cx="14" cy="16" rx="6" ry="3" transform="rotate(-20 14 16)"/><ellipse cx="30" cy="13" rx="6" ry="3" transform="rotate(15 30 13)"/><ellipse cx="22" cy="26" rx="7" ry="3.2"/><ellipse cx="36" cy="28" rx="6" ry="3" transform="rotate(-25 36 28)"/><ellipse cx="13" cy="33" rx="6" ry="3" transform="rotate(20 13 33)"/><ellipse cx="27" cy="38" rx="6" ry="3" transform="rotate(-10 27 38)"/></g><g fill="#B5552A"><ellipse cx="22" cy="17" rx="2.6" ry="2"/><ellipse cx="33" cy="37" rx="2.6" ry="2"/><ellipse cx="9" cy="24" rx="2.6" ry="2"/></g><path d="M38 17q4 4 0 8q-4-4 0-8z" fill="#2F7A4A"/><path d="M19 42q3 3 0 6q-3-3 0-6z" fill="#2F7A4A" transform="translate(0 -8)"/></svg>',
+ laddu:'<svg viewBox="0 0 48 48"><circle cx="16" cy="32" r="10" fill="#E3A12F"/><circle cx="32" cy="32" r="10" fill="#E9AE3E"/><circle cx="24" cy="18" r="10" fill="#EDB84B"/><g fill="#C27D16"><circle cx="20" cy="15" r="1.1"/><circle cx="27" cy="20" r="1.1"/><circle cx="24" cy="13" r="1"/><circle cx="13" cy="30" r="1.1"/><circle cx="18" cy="35" r="1"/><circle cx="30" cy="29" r="1.1"/><circle cx="35" cy="35" r="1"/></g><circle cx="24" cy="9.5" r="1.8" fill="#7DA35A"/></svg>',
+ sev:'<svg viewBox="0 0 48 48"><g fill="none" stroke-linecap="round" stroke-width="2.4"><path d="M6 14q5-4 10 0t10 0t10 0t6 0" stroke="#E3A12F"/><path d="M6 20q5 4 10 0t10 0t10 0t6 0" stroke="#F0BE4E"/><path d="M6 26q5-4 10 0t10 0t10 0t6 0" stroke="#D99525"/><path d="M6 32q5 4 10 0t10 0t10 0t6 0" stroke="#F0BE4E"/><path d="M6 38q5-4 10 0t10 0t10 0t6 0" stroke="#E3A12F"/></g></svg>',
+ cake:'<svg viewBox="0 0 48 48"><path d="M8 20 L40 12 L40 38 L8 38Z" fill="#8A5326"/><path d="M8 20 L40 12 L40 17 L8 25Z" fill="#6E3F1A"/><g fill="#5A3313"><circle cx="16" cy="30" r="1.3"/><circle cx="26" cy="27" r="1.3"/><circle cx="33" cy="33" r="1.3"/><circle cx="21" cy="34" r="1"/></g><path d="M6 39h36" stroke="#C98A2E" stroke-width="2.5" stroke-linecap="round"/></svg>',
+ cookie:'<svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17" fill="#C58C4A"/><circle cx="24" cy="24" r="17" fill="none" stroke="#9A6532" stroke-width="2"/><g fill="#3B1F0C"><rect x="15" y="15" width="4" height="4" rx="1"/><rect x="27" y="13" width="4" height="4" rx="1" transform="rotate(20 29 15)"/><rect x="30" y="26" width="4" height="4" rx="1"/><rect x="18" y="29" width="4" height="4" rx="1" transform="rotate(-15 20 31)"/><rect x="23" y="22" width="3.5" height="3.5" rx="1"/></g></svg>'
+};
+const ITEMS=[
+ {id:'chakli',hi:'मुरकु (चकली)',en:'Chakli (Murukku)',price:450,cat:'namkeen',icon:'chakli'},
+ {id:'gujiya',hi:'गुजिया (करंजी) सादा',en:'Plain Gujiya (Karanji)',price:650,cat:'sweet',icon:'gujiya'},
+ {id:'gujiyak',hi:'गुजिया (करंजी) खोया',en:'Khoya Gujiya (Karanji)',price:750,cat:'sweet',icon:'gujiyaK'},
+ {id:'namakpare',hi:'नमकपारे (सलोनी)',en:'Namakpare (Saloni)',price:350,cat:'namkeen',icon:'namakpare'},
+ {id:'shakkarpare',hi:'शक्करपारे (आटा / मैदा)',hiShort:'शक्करपारे',en:'Shakkarpare',price:400,cat:'sweet',icon:'shakkarpare',variants:[{id:'atta',en:'Wheat flour',hi:'आटा'},{id:'maida',en:'Refined flour',hi:'मैदा'}]},
+ {id:'chivda',hi:'चिवड़ा',en:'Chivda',price:350,cat:'namkeen',icon:'chivda'},
+ {id:'laddu',hi:'बेसन लड्डू (घी)',en:'Besan Laddu (Ghee)',price:700,cat:'sweet',icon:'laddu'},
+ {id:'sev',hi:'सेव',en:'Sev',price:350,cat:'namkeen',icon:'sev'},
+ {id:'cake',hi:'आटा + गुड़ केक',en:'Wheat & Jaggery Cake',price:300,cat:'baked',icon:'cake'},
+ {id:'cookies',hi:'आटा + गुड़ चोको चिप्स कुकीज़',en:'Wheat & Jaggery Choco-chip Cookies',price:400,cat:'baked',icon:'cookie'}
+];
+const byId=Object.fromEntries(ITEMS.map(i=>[i.id,i]));
+const BOX=[['chakli',.5],['gujiya',.5],['shakkarpare',.5,'atta'],['chivda',.5],['laddu',.5]];
+const CAT={all:{hi:'सभी',en:'All'},namkeen:{hi:'नमकीन',en:'Namkeen'},sweet:{hi:'मिठाई',en:'Sweets'},baked:{hi:'केक और कुकीज़',en:'Cake & Cookies'}};
+
+const T={
+hi:{lead:'घर की रसोई में ताज़ा बने नमकीन और मिठाई। पसंद की चीज़ें चुनें — ऑर्डर सीधे WhatsApp पर पहुँच जाएगा।',f1:'घर का बना',f2:'ऑर्डर पर ताज़ा',f3:'गुढ़ियारी, रायपुर',order:'ऑर्डर करें',chat:'WhatsApp पर बात करें',boxTitle:'फराल डिब्बा',boxDesc:'त्योहार के पाँच पसंदीदा, हर एक आधा किलो। एक टैप में पूरा डिब्बा।',boxKg:'2.5 किलो',boxBtn:'डिब्बा जोड़ें',menu:'आज का मेनू',menuSub:'दाम प्रति किलो। आधा किलो भी मिलता है।',search:'खोजें',ph:'खोजें — चकली, laddu…',none:'इस नाम से कुछ नहीं मिला। दूसरा नाम लिखकर देखें।',add:'जोड़ें',perkg:'/किलो',half:'½ किलो',inCart:'कार्ट में',contact:'सम्पर्क',who:'श्रीमती अपूर्वा दाण्डेकर',addr:'म.नं.-270, जनता कॉलोनी, गुढ़ियारी, रायपुर (छ.ग.)',map:'नक्शे में देखें',share:'दोस्तों को भेजें',footer:'घर का बना, प्यार से परोसा।',kg:'किलो'},
+en:{lead:'Fresh namkeen and sweets from a home kitchen. Pick what you like and your order goes straight to WhatsApp.',f1:'Homemade',f2:'Made fresh to order',f3:'Gudhiyari, Raipur',order:'Order now',chat:'Chat on WhatsApp',boxTitle:'Faral box',boxDesc:'Five festive favourites, ½ kg of each. The whole box in one tap.',boxKg:'2.5 kg',boxBtn:'Add the box',menu:'Today’s menu',menuSub:'Prices per kg. Half-kilo packs available too.',search:'Search',ph:'Search — chakli, लड्डू…',none:'Nothing matches that name. Try another spelling.',add:'Add',perkg:'/kg',half:'½ kg',inCart:'in cart',contact:'Contact',who:'Mrs. Apurva Dandekar',addr:'House No. 270, Janta Colony, Gudhiyari, Raipur (C.G.)',map:'Open in Maps',share:'Share with friends',footer:'Made at home, served with love.',kg:'kg'}
+};
+
+const KEY='vinayak-snacks-v1';
+let S={lang:'hi',cart:[],cust:{name:'',phone:'',mode:'pickup',addr:'',date:'',note:''}};
+try{const o=JSON.parse(localStorage.getItem(KEY)||'null');if(o&&Array.isArray(o.cart)){S.lang=o.lang||'hi';S.cart=o.cart.filter(l=>byId[l.id]);Object.assign(S.cust,o.cust||{})}}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const t=k=>T[S.lang][k];
+const $=s=>document.querySelector(s);
+const rs=n=>'₹'+Math.round(n).toLocaleString('en-IN');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const kgTxt=(k,lang)=>(k%1?k.toFixed(1):k)+' '+(lang==='hi'?'किलो':'kg');
+const wEn=w=>w===.5?'½ kg':'1 kg', wHi=w=>w===.5?'आधा किलो':'1 किलो';
+const variant=(i,v)=>i.variants&&v?i.variants.find(x=>x.id===v):null;
+
+/* thali */
+(function(){
+  const pos=[['laddu',0,0,1],['chakli',0,-34],['gujiya',32,-11],['chivda',20,28],['cookie',-20,28],['shakkarpare',-32,-11]];
+  $('#thali').innerHTML=pos.map(([ic,x,y,c],n)=>`<div class="katori${c?' c':''}" style="left:50%;top:50%;margin:${c?'-17%':'-15%'} 0 0 ${c?'-17%':'-15%'};--x:${x*3}%;--y:${y*3}%;transform:translate(var(--x),var(--y));animation-delay:${.15+n*.12}s">${ICONS[ic]}</div>`).join('');
+  const g=document.querySelector('#pt');let h='';for(let k=1;k<16;k++)h+=`<use href="#pt" transform="rotate(${k*22.5} 100 100)"/>`;g.parentNode.insertAdjacentHTML('beforeend',h);
+})();
+
+/* menu */
+let cat='all',query='';
+function renderTabs(){$('#tabs').innerHTML=Object.keys(CAT).map(c=>`<button class="tab" data-cat="${c}" aria-pressed="${c===cat}">${CAT[c][S.lang]}</button>`).join('')}
+function renderGrid(){
+  const q=query.trim().toLowerCase();
+  const list=ITEMS.filter(i=>(cat==='all'||i.cat===cat)&&(!q||(i.hi+' '+i.en+' '+i.id).toLowerCase().includes(q)));
+  $('#grid').innerHTML=list.map(i=>{
+    const kg=S.cart.filter(l=>l.id===i.id).reduce((a,l)=>a+l.w*l.q,0);
+    const p=S.lang==='hi'?i.hi:i.en, s=S.lang==='hi'?i.en:i.hi;
+    return `<article class="card ${i.cat}">
+      <div class="tile">${ICONS[i.icon]}<span class="kind">${CAT[i.cat][S.lang]}</span>${kg?`<span class="have">${kgTxt(kg,S.lang)} ${t('inCart')}</span>`:''}</div>
+      <div class="body"><h3>${esc(p)}</h3><p class="alt">(${esc(s)})</p>
+        <div class="foot"><div class="pr"><b>${rs(i.price)}</b><small>${t('perkg')}</small><span>${t('half')} ${rs(i.price/2)}</span></div>
+        <button class="add" data-add="${i.id}" aria-label="${esc(t('add')+': '+p)}"><span class="plus">+</span><span class="lbl">${t('add')}</span></button></div>
+      </div></article>`}).join('');
+  $('#none').hidden=list.length>0;
+}
+
+/* picker (English with Hindi in brackets) */
+let P=null;
+function openPick(id){
+  const i=byId[id];P={id,w:1,q:1,v:i.variants?i.variants[0].id:null};
+  $('#pHero').className='phero '+i.cat;$('#pHero').innerHTML=ICONS[i.icon];
+  $('#pName').textContent=i.en;$('#pAlt').textContent='('+(i.hiShort||i.hi)+')';
+  $('#vWrap').hidden=!i.variants;renderPick();openSheet('#pick');
+}
+function renderPick(){
+  const i=byId[P.id];
+  if(i.variants)$('#vOpts').innerHTML=i.variants.map(v=>`<button class="opt" role="radio" aria-checked="${P.v===v.id}" data-v="${v.id}"><b>${v.en}</b><span>(${v.hi})</span></button>`).join('');
+  $('#wOpts').innerHTML=[.5,1].map(w=>`<button class="opt" role="radio" aria-checked="${P.w===w}" data-w="${w}"><b>${wEn(w)}</b><span>(${wHi(w)})</span><div class="big">${rs(i.price*w)}</div></button>`).join('');
+  $('#qo').textContent=P.q;$('#addAmt').textContent=rs(i.price*P.w*P.q);
+}
+function addLine(id,w,q,v){
+  const key=id+'|'+w+'|'+(v||'');const ex=S.cart.find(l=>l.key===key);
+  if(ex)ex.q+=q;else S.cart.push({key,id,w,q,v:v||null});
+  save();sync();const b=$('#cartBtn');b.classList.remove('bump');void b.offsetWidth;b.classList.add('bump');
+}
+
+/* cart */
+const amt=l=>byId[l.id].price*l.w*l.q;
+const total=()=>S.cart.reduce((a,l)=>a+amt(l),0);
+const totKg=()=>S.cart.reduce((a,l)=>a+l.w*l.q,0);
+const packs=()=>S.cart.reduce((a,l)=>a+l.q,0);
+let sent=false;
+function renderCart(){
+  const B=$('#cartBody');
+  if(!S.cart.length){B.innerHTML=`<div class="emptyc">${ICONS.laddu}<p style="font-weight:800;color:var(--ink);margin-top:8px">Your cart is empty</p><p>(आपका कार्ट खाली है)</p><button class="cta" data-close data-goto="#menu" style="justify-content:center">Browse the menu (मेनू देखें)</button></div>`;return}
+  const c=S.cust;const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());
+  B.innerHTML=`
+  <div class="card2">${S.cart.map(l=>{const i=byId[l.id],v=variant(i,l.v);return `
+    <div class="ln"><div class="ic ${i.cat}">${ICONS[i.icon]}</div>
+      <div><div class="nm">${esc(i.en)}${v?' — '+v.en:''}<small>(${esc(i.hiShort||i.hi)}${v?' — '+v.hi:''})</small></div>
+        <div class="meta"><div class="stepper sm"><button data-dec="${l.key}" aria-label="Fewer">−</button><output>${l.q}</output><button data-inc="${l.key}" aria-label="More">+</button></div><span class="w">× ${wEn(l.w)}</span></div></div>
+      <div class="amt">${rs(amt(l))}<button data-rm="${l.key}">Remove</button></div></div>`}).join('')}
+    <div class="bill"><div><span>Total weight (कुल वज़न)</span><span>${kgTxt(totKg(),'en')}</span></div>
+      <div class="tot"><span>Total (कुल)</span><b>${rs(total())}</b></div></div>
+  </div>
+
+  <div class="lab" style="margin-top:22px">Your details <small>(आपकी जानकारी)</small></div>
+  <label class="f" id="fN"><span>Name <small>(नाम)</small></span><input id="cN" autocomplete="name" value="${esc(c.name)}"><div class="err">Please enter your name (अपना नाम लिखें)</div></label>
+  <label class="f"><span>Mobile number <small>(मोबाइल नंबर) — optional</small></span><input id="cP" type="tel" inputmode="tel" autocomplete="tel" value="${esc(c.phone)}"></label>
+  <div class="f"><span>How will you get it? <small>(कैसे लेंगे?)</small></span>
+    <div class="seg" role="radiogroup"><button role="radio" data-mode="pickup" aria-checked="${c.mode==='pickup'}">Pickup<small>(घर से ले जाएँगे)</small></button><button role="radio" data-mode="delivery" aria-checked="${c.mode==='delivery'}">Home delivery<small>(घर पर पहुँचाएँ)</small></button></div></div>
+  <label class="f" id="fA" ${c.mode==='delivery'?'':'hidden'}><span>Delivery address <small>(पता)</small></span><textarea id="cA" autocomplete="street-address">${esc(c.addr)}</textarea><div class="err">Please enter the address (पता लिखें)</div></label>
+  <label class="f"><span>Needed by <small>(कब चाहिए?)</small></span><input id="cD" type="date" min="${d.toISOString().slice(0,10)}" value="${esc(c.date)}"></label>
+  <label class="f"><span>Note <small>(कोई ख़ास बात) — optional</small></span><textarea id="cO" placeholder="e.g. pack separately (अलग-अलग पैक करें)">${esc(c.note)}</textarea></label>
+
+  <button class="send" id="sendBtn"><svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>Place order on WhatsApp · ${rs(total())}</button>
+  <p class="hint">WhatsApp opens with your order already typed — just tap send.<br>(WhatsApp खुलेगा, ऑर्डर पहले से लिखा होगा — बस भेजें दबाएँ।)</p>
+  <div class="sent ${sent?'show':''}" id="sentBox"><b>Order sent? (ऑर्डर भेज दिया?)</b><br><button class="linkbtn" id="newOrder">Start a new order (नया ऑर्डर)</button></div>
+  <p style="text-align:center;margin-top:8px"><button class="linkbtn" id="clearBtn" style="color:var(--muted)">Empty cart (कार्ट खाली करें)</button></p>`;
+}
+function readCust(){if(!$('#cN'))return;const g=id=>{const e=document.getElementById(id);return e?e.value.trim():''};Object.assign(S.cust,{name:g('cN'),phone:g('cP'),addr:g('cA'),date:g('cD'),note:g('cO')});save()}
+function message(){
+  const c=S.cust,L=['🙏 Namaste! New order from the website','*Vinayak Snacks & Sweets* (विनायक स्नैक्स एण्ड स्वीट्स)',''];
+  S.cart.forEach((l,n)=>{const i=byId[l.id],v=variant(i,l.v);
+    L.push(`${n+1}. *${i.en}${v?' – '+v.en:''}* (${i.hiShort||i.hi}${v?' – '+v.hi:''})`,`     ${wEn(l.w)} × ${l.q} = ${rs(amt(l))}`)});
+  L.push('',`*Total (कुल): ${rs(total())}*`,`Total weight (कुल वज़न): ${kgTxt(totKg(),'en')}`,'');
+  L.push(`👤 Name (नाम): ${c.name}`);
+  if(c.phone)L.push(`📞 Mobile (मोबाइल): ${c.phone}`);
+  L.push(c.mode==='delivery'?'🛵 Home delivery (घर पर पहुँचाएँ)':'🛍️ Pickup (घर से ले जाएँगे)');
+  if(c.mode==='delivery')L.push(`📍 Address (पता): ${c.addr}`);
+  if(c.date)L.push(`📅 Needed by (कब चाहिए): ${new Date(c.date+'T00:00').toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short'})}`);
+  if(c.note)L.push(`📝 Note (नोट): ${c.note}`);
+  L.push('','Please confirm my order (कृपया ऑर्डर कन्फ़र्म करें). Thank you! 🪔');
+  return L.join('\n');
+}
+function send(){
+  readCust();
+  const nb=!S.cust.name, ab=S.cust.mode==='delivery'&&!S.cust.addr;
+  $('#fN').classList.toggle('bad',nb);$('#fA').classList.toggle('bad',ab);
+  if(nb||ab){(nb?$('#cN'):$('#cA')).focus();return}
+  const url=`https://wa.me/${PHONE}?text=${encodeURIComponent(message())}`;
+  toast('Opening WhatsApp… (WhatsApp खुल रहा है)');
+  const w=window.open(url,'_blank','noopener');if(!w)location.href=url;
+  sent=true;$('#sentBox').classList.add('show');
+}
+
+/* sheets */
+let back=null;
+function openSheet(sel){
+  back=document.activeElement;
+  document.querySelectorAll('.sheet.open').forEach(s=>{s.classList.remove('open');s.hidden=true});
+  const el=$(sel);el.hidden=false;el.scrollTop=0;requestAnimationFrame(()=>requestAnimationFrame(()=>el.classList.add('open')));
+  $('#scrim').classList.add('open');document.body.style.overflow='hidden';
+  setTimeout(()=>{const f=el.querySelector('.opt[aria-checked="true"]')||el.querySelector('.x');f&&f.focus({preventScroll:true})},80);
+}
+function closeAll(){
+  readCust();
+  document.querySelectorAll('.sheet.open').forEach(s=>{s.classList.remove('open');setTimeout(()=>{if(!s.classList.contains('open'))s.hidden=true},320)});
+  $('#scrim').classList.remove('open');document.body.style.overflow='';
+  back&&back.focus&&back.focus({preventScroll:true});
+}
+let tt;function toast(m){const e=$('#toast');e.textContent=m;e.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>e.classList.remove('show'),1900)}
+
+function sync(){
+  $('#badge').textContent=packs();
+  $('#bar').classList.toggle('show',S.cart.length>0);
+  $('#barCount').textContent=`${packs()} pack${packs()===1?'':'s'} · ${kgTxt(totKg(),'en')}`;
+  $('#barTotal').textContent=rs(total());
+  renderGrid();
+  if($('#cart').classList.contains('open'))renderCart();
+}
+function applyLang(){
+  document.documentElement.lang=S.lang;
+  document.querySelectorAll('[data-t]').forEach(e=>e.textContent=t(e.dataset.t));
+  $('#q').placeholder=t('ph');
+  $('#langBtn').textContent=S.lang==='hi'?'EN':'हिं';
+  $('#langBtn').setAttribute('aria-label',S.lang==='hi'?'Switch to English':'हिंदी में देखें');
+  $('#boxPrice').textContent=rs(BOX.reduce((a,[id,w])=>a+byId[id].price*w,0));
+  $('#boxChips').innerHTML=BOX.map(([id])=>`<span>${esc(S.lang==='hi'?byId[id].hi.split(' (')[0]:byId[id].en.split(' (')[0])}</span>`).join('');
+  renderTabs();sync();
+}
+
+document.addEventListener('click',e=>{
+  const g=s=>e.target.closest(s);let x;
+  if(x=g('[data-add]'))return openPick(x.dataset.add);
+  if(x=g('[data-cat]')){cat=x.dataset.cat;renderTabs();renderGrid();return}
+  if(x=g('[data-w]')){P.w=+x.dataset.w;renderPick();return}
+  if(x=g('[data-v]')){P.v=x.dataset.v;renderPick();return}
+  if(x=g('[data-mode]')){readCust();S.cust.mode=x.dataset.mode;save();renderCart();return}
+  if(x=g('[data-inc]')){readCust();S.cart.find(l=>l.key===x.dataset.inc).q++;save();sync();return}
+  if(x=g('[data-dec]')){readCust();const l=S.cart.find(l=>l.key===x.dataset.dec);if(--l.q<1)S.cart=S.cart.filter(y=>y!==l);save();sync();return}
+  if(x=g('[data-rm]')){readCust();S.cart=S.cart.filter(l=>l.key!==x.dataset.rm);save();sync();return}
+  if(x=g('[data-close]')){closeAll();if(x.dataset.goto)setTimeout(()=>$(x.dataset.goto).scrollIntoView(),320);return}
+  if(g('#sendBtn'))return send();
+  if(g('#clearBtn')||g('#newOrder')){S.cart=[];sent=false;S.cust.note='';S.cust.date='';save();sync();renderCart();toast('Cart emptied (कार्ट खाली)');return}
+});
+$('#scrim').onclick=closeAll;
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#scrim').classList.contains('open'))closeAll()});
+$('#qm').onclick=()=>{if(P.q>1){P.q--;renderPick()}};
+$('#qp').onclick=()=>{if(P.q<20){P.q++;renderPick()}};
+$('#addBtn').onclick=()=>{const i=byId[P.id];addLine(P.id,P.w,P.q,P.v);closeAll();toast(`✓ ${i.en} added (जोड़ दिया)`)};
+$('#boxBtn').onclick=()=>{BOX.forEach(([id,w,v])=>addLine(id,w,1,v));toast('✓ Faral box added (डिब्बा जोड़ दिया)')};
+$('#cartBtn').onclick=$('#barBtn').onclick=()=>{renderCart();openSheet('#cart')};
+$('#langBtn').onclick=()=>{S.lang=S.lang==='hi'?'en':'hi';save();applyLang()};
+$('#q').oninput=e=>{query=e.target.value;renderGrid()};
+$('#shareBtn').onclick=async()=>{
+  const d={title:'Vinayak Snacks & Sweets',text:'घर के बने नमकीन और मिठाई — WhatsApp पर ऑर्डर करें',url:location.href.split('#')[0]};
+  try{if(navigator.share){await navigator.share(d);return}}catch(e){return}
+  try{await navigator.clipboard.writeText(d.url);toast('Link copied (लिंक कॉपी हुआ)')}catch(e){}
+};
+applyLang();
+})();
+</script>
+</body>
+</html>
